@@ -9,6 +9,10 @@ const app = express();
 // Melakukan koneksi ke database
 connectDB();
 
+// Inisialisasi Middleware
+// use body parser yang sudah ada di express
+app.use(express.json({ extended: false }));
+
 // Contoh mengaplikasikan get request
 app.get("/", (req, res) => console.log("Server Running"));
 
@@ -18,7 +22,8 @@ app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
 
-/*  Inisialisasi port untuk mendeteksi port environment projek
+/*  
+    Inisialisasi port untuk mendeteksi port environment projek
     Jika tidak ada port dalam environment projek maka nilai default menjadi 5000
 */
 const PORT = process.env.PORT || 5000;
