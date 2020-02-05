@@ -1,0 +1,2 @@
+config digunakan untuk menyimpan global variabel yang akan digunakan dalam servis ini,
+contoh untuk menyimpan data user database atau api key, dll
