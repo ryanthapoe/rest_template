@@ -1,0 +1,18 @@
+Regular Dependency description : 
+command : (npm i / install)
+
+express : main framework for backend
+express-validator : validasi data yang di terima backend
+bcryptjs : melakukan encrypt password user untuk di simpan di db
+config : membuat global variabel contoh (api key, userdb, passworddb, dll)
+gravatar : menampilkan gambar profil jika email user terdaftar di gravatar
+jsonwebtoken : menyediakan token yang akan di kirim beserta data kiriman pada private route sebagai validasi
+mongoose : digunakan untuk berinteraksi dengan db
+request : modul untuk melakukan http request ke api lain (contoh untuk melakukan request ke api github, dll)
+
+
+Developer Dependency description : 
+command : (npm i -D)
+
+nodemon : live server untuk backend (melakukan refresh setiap ada perubahan yang terjadi di code server)
+concurrently : menggabungkan 2 command npm untuk menjalankan server nodejs dan react dengan 1 command
