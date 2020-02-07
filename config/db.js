@@ -15,7 +15,8 @@ const connectDB = async () => {
     // mongoose.connect mengirimkan promise
     await mongoose.connect(dbURI, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
     });
     console.log("Database terhubung...");
   } catch (err) {
