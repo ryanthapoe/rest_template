@@ -19,8 +19,6 @@ app.get("/", (req, res) => console.log("Server Running"));
 // Mengambil route dari folder routes
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
-app.use("/api/profile", require("./routes/api/profile"));
-app.use("/api/posts", require("./routes/api/posts"));
 
 /*  
     Inisialisasi port untuk mendeteksi port environment projek
