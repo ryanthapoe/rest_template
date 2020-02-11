@@ -26,7 +26,7 @@ const User = require("../../models/User");
 
 // @route   GET api/auth
 // @desc    Send Token to register route
-// @access  Public
+// @access  Private (Menggunakan Token)
 // Param 2 sebagai middleware
 router.get("/", auth, async (req, res) => {
   try {
